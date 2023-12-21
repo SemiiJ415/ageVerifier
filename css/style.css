@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 86px;
+    background-image: radial-gradient(#ac1917, #27958f);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 10px 1px 1px aliceblue;
+}
+
+.label-text {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Kalnia', serif;;
+}
+
+.label-text2 {
+    text-decoration-line: underline;
+    text-decoration-color: #ac1917
+;
+}
