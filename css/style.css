@@ -23,6 +23,29 @@ h1 {
 
 .label-text2 {
     text-decoration-line: underline;
-    text-decoration-color: #ac1917
-;
+    text-decoration-color: #ac1917;
+}
+
+.check {
+    width: 40px;
+    height: 40px;
+}
+
+.submit-btn {
+    font-size: 30px;
+    width: 50%;
+    height: 20%;
+    color: aliceblue;
+    background-color: green;
+}
+
+.text {
+    margin: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: green;
+}
+
+#messageText2 {
+    color: #ac1917;
 }

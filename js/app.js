@@ -4,17 +4,18 @@
 //get today's date
 const today = new Date();
 
-//get user input
-const dateInput = document.getElementById('dateInput');
 //valid year to pass test
 const validYear = today.getFullYear() - 21
 const validMonth = today.getMonth()
 const validDay = today.getDate()
 
+//get user input
+const dateInput = document.getElementById('dateInput');
 const checkbox = document.getElementById('checkbox')
 
 const message = document.getElementById('message')
-let messageText;
+let messageText = "first message";
+let messageText2 = ""
 // need to get the year for the valid date by subtracting 21 years from today's date
 // const validAge = 
 //verify checkbox is marked
@@ -45,48 +46,49 @@ const getDOB =()=> {
 }
 
 //verify the users date of birth
-const verifyAge =(date, year, month, day)=> {
-    const userDate = date;
+const verifyAge =(year, month, day)=> {
     const userYear = year;
     const userMonth = month;
     const userDay = day;
     //check to see if user birth YEAR is valid
-    //is userYear >= validYear?
     if (validYear >= userYear) {
-        if (validMonth >= userMonth && validDay >= userDay) {
+        if (validMonth >= userMonth) {
             if(validDay >= userDay) {
-                messageText = 'access granted'
-                message.innerHTML = `
-                ${messageText} `
+                messageText = "access granted";
+                message.innerHTML = ` ${messageText}`;
             } else {
-                messageText = 'grab the pacifier'
-                message.innerHTML = `
-                ${messageText} `
+                messageText = "grab the pacifier";
+                message.innerHTML = ` ${messageText}`;
             }
         } else {
-            messageText = 'grab the pacifier'
-            message.innerHTML = `
-            ${messageText} `
+            messageText = "grab the pacifier";
+            message.innerHTML = ` ${messageText}`;
         }
     } else {
-        messageText = 'grab the pacifier'
-        message.innerHTML = `
-        ${messageText} `
+        messageText = "grab the pacifier";
+        message.innerHTML = ` ${messageText}`;
     }
 }
+// const verifyAge =(year, month, day)=> {
+//     year,
+//     month, 
+//     day
 
-// const verifyAge =(date, year, month, day)=> {
-//     const userDate = date;
-//     const userYear = year;
-//     const userMonth = month;
-//     const userDay = day;
-//     //check to see if user birth YEAR is valid
-//     //is userYear >= validYear?
 //     if (validYear >= userYear) {
-//         if (validMonth >= userMonth && validDay == userDay) {
-//             console.log('you are valid')
-//         } 
+//         if (validMonth >= userMonth) {
+//             if(validDay >= userDay) {
+//                 messageText = "access granted";
+//                 message.innerHTML =
+//                 `${messageText}`
+//             }
+//         } else {
+//             messageText ="grab the pacifier";
+//             message.innerHTML =
+//             `${messageText}`
+//         }
 //     } else {
-//         console.log('grab the pacifier')
+//         messageText ="grab the pacifier";
+//         message.innerHTML = 
+//         `${messageText}`
 //     }
 // }

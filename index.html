@@ -15,27 +15,26 @@
     <header class="header">
         <h1 class="text-capitalize text-center">age verifier</h1>
     </header>
-
-    <section class="section" id="section">
-        <div class="container">
-            <div class="row">
-
-            </div>
-        </div>
-    </section>
     <main class="main text-center">
-        <h2 class="subheading" id="subheading"></h2>
-        
-        <form action="#">
-            <label for="date" name="date" id="dateLabel" class="label-text">Enter your date of birth:</label>
-            <input type="date" name="date" id="dateInput" value="2002-12-20">
-            <label for="checkbox" name="checkbox" id="checkboxLabel" class="label-text label-text2">I verify that the information is true and punishable by law if false.</label>
-            <input type="checkbox" id="checkbox" name="checkbox"  class="" required>
-            <input type="submit" name="submit" id="submit" value="Verify your age" onclick="validate()">
-        </form>
-
-        <p class="text" id="message"></p>
-
+        <section class="section" id="section">
+            <div class="container">
+                <div class="row">
+                    <h2 class="subheading" id="subheading"></h2>
+                    <form action="#">
+                        <label for="date" name="date" id="dateLabel" class="label-text">Enter your date of birth:</label>
+                        <div class="date-div">
+                            <input type="date" name="date" id="dateInput" value="">
+                        </div>
+                        <label for="checkbox" name="checkbox" id="checkboxLabel" class="label-text label-text2">I verify that the information is true and punishable by law if false.</label>
+                        <div class="checkbox-div">
+                            <input type="checkbox" id="checkbox" name="checkbox"  class="check" required>
+                        </div>
+                        <input type="submit" name="submit" id="submit" value="Verify your age" class="submit-btn text-uppercase" onclick="validate(); return false">
+                    </form>
+                </div>
+                <p class="text" id="message"></p>
+            </div>
+        </section>
     </main>
     <footer class="footer"></footer>
 
